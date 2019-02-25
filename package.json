@@ -1,0 +1,11 @@
+{
+    "name": "pulumi-azure-kubernetes-guestbook",
+    "devDependencies": {
+        "@types/node": "latest"
+    },
+    "dependencies": {
+        "@pulumi/azure": "latest",
+        "@pulumi/kubernetes": "^0.20.3",
+        "@pulumi/pulumi": "latest"
+    }
+}

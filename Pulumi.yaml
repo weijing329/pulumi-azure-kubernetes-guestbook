@@ -1,0 +1,13 @@
+name: pulumi-azure-kubernetes-guestbook
+description: An Azure TypeScript Pulumi program deploys Guestbook App with Redis and Nginx Load Balancer
+runtime: nodejs
+template:
+  config:
+    azure:environment:
+      description: The Azure environment to use (`public`, `usgovernment`, `german`, `china`)
+      default: public
+    password:
+      description: Your cluster password
+      secret: true
+    sshPublicKey:
+      description: Your SSH public key (generate with `ssh-keygen -t rsa -f key.rsa`)
